@@ -47,6 +47,7 @@ $todos = getTodos($pdo);
 <main>
   <h1>Todos</h1>
   <p>ここにやることリストを書きましょう！！</p>
+  <p>あなただけのTODOリストを作りましょう！</p>
   <form action="?action=add" method="post">
     <input type="text" name="title" placeholder="ここに入力する">
     <input type="hidden" name="token" value="<?= h($_SESSION['token']); ?>">
